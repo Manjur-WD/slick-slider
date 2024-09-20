@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider Example</title>
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery (required for Slick Slider) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" /> -->
+
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+    <section class="freelance-slider">
+        <div class="slider-for">
+            <div class="slide" data-video-url="https://www.example.com/video1.mp4"
+                data-thumbnail-url="https://plus.unsplash.com/premium_photo-1726217054110-b5282320fd84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="video-info">
+                    <h3>Video 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    <button class="play-btn" data-video-url="https://www.example.com/video1.mp4"
+                        data-thumbnail-url="https://plus.unsplash.com/premium_photo-1726217054110-b5282320fd84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D">PLAY</button>
+                </div>
+                <img src="https://plus.unsplash.com/premium_photo-1726217054110-b5282320fd84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image 1">
+            </div>
+            <div class="slide" data-video-url="https://www.example.com/video2.mp4"
+                data-thumbnail-url="https://images.unsplash.com/photo-1726609939114-78ca262451e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D">
+                <div class="video-info">
+                    <h3>Video 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    <button class="play-btn" data-video-url="https://www.example.com/video2.mp4"
+                        data-thumbnail-url="https://images.unsplash.com/photo-1726609939114-78ca262451e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D">PLAY</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1726609939114-78ca262451e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image 2">
+            </div>
+            <div class="slide" data-video-url="https://www.example.com/video3.mp4"
+                data-thumbnail-url="https://images.unsplash.com/photo-1726486896376-4d1340e2f672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="video-info">
+                    <h3>Video 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    <button class="play-btn" data-video-url="https://www.example.com/video3.mp4"
+                        data-thumbnail-url="https://images.unsplash.com/photo-1726486896376-4d1340e2f672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">PLAY</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1726486896376-4d1340e2f672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image 3">
+            </div>
+            <div class="slide" data-video-url="https://www.example.com/video4.mp4"
+                data-thumbnail-url="https://images.unsplash.com/photo-1724279797190-8371a9939494?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="video-info">
+                    <h3>Video 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    <button class="play-btn" data-video-url="https://www.example.com/video4.mp4"
+                        data-thumbnail-url="https://images.unsplash.com/photo-1724279797190-8371a9939494?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D">PLAY</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1724279797190-8371a9939494?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image 4">
+            </div>
+            <div class="slide" data-video-url="https://www.example.com/video5.mp4"
+                data-thumbnail-url="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="video-info">
+                    <h3>Video 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    <button class="play-btn" data-video-url="https://www.example.com/video5.mp4"
+                        data-thumbnail-url="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D">PLAY</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Image 5">
+            </div>
+        </div>
+        <aside>
+            <div class="slider-nav">
+                <div class="slide"><img
+                        src="https://plus.unsplash.com/premium_photo-1726217054110-b5282320fd84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 1">
+                    <div class="content">
+                        <h3>Image 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    </div>
+                </div>
+                <div class="slide"><img
+                        src="https://images.unsplash.com/photo-1726609939114-78ca262451e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 2">
+                    <div class="content">
+                        <h3>Image 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    </div>
+                </div>
+                <div class="slide"><img
+                        src="https://images.unsplash.com/photo-1726486896376-4d1340e2f672?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 3">
+                    <div class="content">
+                        <h3>Image 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    </div>
+                </div>
+                <div class="slide"><img
+                        src="https://images.unsplash.com/photo-1724279797190-8371a9939494?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 4">
+                    <div class="content">
+                        <h3>Image 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    </div>
+                </div>
+                <div class="slide"><img
+                        src="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Image 5">
+                    <div class="content">
+                        <h3>Image 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+
+    <!-- VIDEO MODAL SECTION -->
+    <div class="video-modal hidden">
+        <video id="my-video" class="video-js" controls preload="auto" width="100%" height="100%"
+            poster="https://images.unsplash.com/photo-1726408093361-238693a8d51d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5OXx8fGVufDB8fHx8fA%3D%3D"
+            data-setup="{}">
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/webm" />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+        <button class="close-btn">CLOSE</button>
+    </div>
+
+
+    <!-- Your content goes here -->
+
+    <!-- <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script> -->
+
+    <script>
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            focusOnSelect: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
+
+        $('.play-btn').on('click', function () {
+            var videoUrl = $(this).data('video-url');
+            var thumbnailUrl = $(this).data('thumbnail-url');
+            var video = document.getElementById('my-video');
+
+            // Update video source
+            video.src = videoUrl;
+
+            // Update poster (thumbnail)
+            video.poster = thumbnailUrl;
+
+            // Show the modal
+            $('.video-modal').removeClass('hidden');
+        });
+
+        $('.close-btn').on('click', function () {
+            var video = document.getElementById('my-video');
+
+            // Pause and reset video
+            video.pause();
+            video.currentTime = 0;
+
+            // Hide the modal
+            $('.video-modal').addClass('hidden');
+
+            // Clear the source and poster
+            video.src = '';
+            video.poster = '';
+        });
+    </script>
+</body>
+
+</html>

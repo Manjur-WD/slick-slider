@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+.freelance-slider {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.freelance-slider .slider-for {
+    height: 100%;
+    position: relative;
+}
+
+
+.freelance-slider .slider-for img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transition: 2s;
+    clip-path: circle(0% at 55% 75%);
+}
+
+
+.freelance-slider .slider-nav img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+aside {
+    position: absolute;
+    width: 65%;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-5%);
+    overflow: hidden;
+}
+
+aside .slider-nav .slide {
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+    scale: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+aside .slider-nav .slide:hover {
+    scale: 0.9;
+}
+
+aside .slider-nav .slide img {
+    border: 1px solid #c9c6c6;
+}
+
+aside .slider-nav .slide::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    left: 20px;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: block;
+    z-index: 1;
+    filter: blur(40px);
+}
+
+aside .slider-nav .slide .content {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 2;
+}
+
+aside .slider-nav .slick-current.slick-active {
+    scale: 0.9;
+}
+
+aside .slider-nav .slick-current.slick-active img {
+    border: 1px solid #c9c6c6;
+}
+
+.slider-for .slick-current.slick-active img {
+    clip-path: circle(100% at center);
+}
+
+.video-info {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    z-index: 99;
+}
+
+.video-info h3 {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 150px;
+    opacity: 0.1;
+    scale: 0.1;
+    transition: 3s;
+    text-shadow: 0 0 10px #fff;
+    text-transform: uppercase;
+}
+
+.video-info p {
+    font-size: 16px;
+    font-weight: 400;
+    transform: translateX(-50%);
+    opacity: 0.1;
+    transition: 3s;
+}
+
+.video-info .play-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    scale: 0;
+    transition: 3s;
+    box-shadow: 0 0 10px #fff;
+}
+
+.slider-for .slick-current.slick-active .video-info h3,
+.slider-for .slick-current.slick-active .video-info p,
+.slider-for .slick-current.slick-active .play-btn {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+}
+
+.slider-for .slick-current.slick-active .play-btn {
+    scale: 1;
+}
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.932);
+    z-index: 999;
+}
+
+.video-modal video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80% !important;
+    height: 80% !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.hidden {
+    display: none;
+}
